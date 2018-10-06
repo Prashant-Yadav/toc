@@ -1,0 +1,19 @@
+{
+  "name": "toc",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "webpack && node app.js",
+    "js-minify": "webpack ./public/assets/js/config.js"
+  },
+  "author": "Prashant Yadav",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^4.16.3",
+    "path": "^0.12.7",
+    "webpack": "^4.20.2"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.1.2"
+  }
+}

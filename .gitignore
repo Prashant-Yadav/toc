@@ -1,0 +1,18 @@
+# node_modules #
+node_modules/*
+npm-debug.log
+.DS_Store
+
+# Idea Files #
+.idea/**
+
+# Es Linter #
+.eslintrc.yml
+
+# Ignoring all source map files #
+*.map
+
+# Ignoring all sass cache files #
+.sass-cache/*
+
+yarn.lock
