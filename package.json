@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "start": "webpack && node app.js",
-    "js-minify": "webpack ./public/assets/js/config.js"
+    "start": "webpack && npm run scss-compile && node app.js",
+    "scss-compile": "node-sass ./public/assets/css/styles.scss ./public/assets/css/styles.css"
   },
   "author": "Prashant Yadav",
   "license": "UNLICENSED",
   "dependencies": {
     "express": "^4.16.3",
+    "node-sass": "^4.9.3",
     "path": "^0.12.7",
     "webpack": "^4.20.2"
   },

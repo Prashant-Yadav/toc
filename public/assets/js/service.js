@@ -16,7 +16,7 @@ ToC.Service = function() {
         if (this.status >= 200 && this.status < 300) {
           done(null, JSON.parse(xhttp.responseText).response);
         } else {
-          done(xhttp.responseText);
+          done(JSON.parse(xhttp.responseText));
         }
       };
 
